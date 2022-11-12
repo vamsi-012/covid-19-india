@@ -1,0 +1,27 @@
+POST http://localhost:3000/districts/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+DELETE http://localhost:3000/districts/321/ HTTP/1.1
+
+###
+PUT http://localhost:3000/districts/323/ HTTP/1.1
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
